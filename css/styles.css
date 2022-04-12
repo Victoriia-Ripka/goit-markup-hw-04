@@ -154,6 +154,7 @@ body {
 
 /* ---first section---*/
 .first-section {
+  width: 1600px;
   background-color: var(--color-dark-2f303a);
   background-image: linear-gradient(
     rgba(47, 48, 58, 0.4), 
@@ -162,8 +163,8 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; 
-  /* padding: 200px 0; */
-  /* flex-grow: 1; */
+  padding: 200px 0; 
+  flex-grow: 1; 
 }
 
 .main-title {
