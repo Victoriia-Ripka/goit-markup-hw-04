@@ -130,11 +130,11 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--color-grey-757575);
+  padding: 32px 0;;
 
   flex-direction: row;
   justify-content: end;
   margin-right: 50px;
-  padding: 32px 0;
 }
 
 .header-contacts-item:last-child {
@@ -288,7 +288,7 @@ body {
   margin-right: 0;
 }
 
-.activity-item {
+.activity-item-img {
   display: block;
   max-width: 100%;
   height: auto;
@@ -312,7 +312,6 @@ body {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  width: 265px;
 
   margin: 0 auto;
   margin-bottom: 50px;
@@ -477,6 +476,11 @@ body {
   background: var(--focus-color-blue);
 }
 
+.port-btn-current{
+  color: var(--color-white-ffffff);
+  background-color: var(--focus-color-blue);
+}
+
 .portf-list2 {
   display: flex;
   flex-wrap: wrap;
@@ -484,19 +488,20 @@ body {
 }
 
 .portf-list-item {
-  border: rgba(238, 238, 238, 1) solid 1px;
   width: 370px;
-  /*padding-bottom: 20px;*/
   margin: 15px;
   flex-basis: calc((100% - 3 * 30px) / 4);
 }
 
-/*.portf-list-item-img{
-  margin-bottom: 20px;
-} */
+.portf-list-item-img{
+  display: block;
+} 
 
 .portf-list-item-text {
-  margin: 20px 25px;
+  padding: 20px 24px;
+  border-bottom: rgba(238, 238, 238, 1) solid 1px;
+  border-left: rgba(238, 238, 238, 1) solid 1px;
+  border-right: rgba(238, 238, 238, 1) solid 1px;
 }
 
 .portf-list-item-title {
