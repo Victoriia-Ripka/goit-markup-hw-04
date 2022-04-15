@@ -232,6 +232,14 @@ body {
   margin-right: 0;
 }
 
+.peculiarities-item-fon{
+  width: 270px;
+  height: 120px;
+  background: #F5F4FA;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
 .peculiarities-item-title {
   font-weight: 700;
   font-size: 14px;
@@ -327,18 +335,24 @@ body {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
+  
   flex-basis: calc((100%-3*30px)/4);
   margin-right: 30px;
-  padding-bottom: 30px;
+  /* padding-bottom: 30px; */
 }
 
 .team-item:last-child {
   margin-right: 0;
 }
 
-.team-item-img {
-  margin-bottom: 30px;
+/* .team-item-img {
+  
+} */
+
+.team-item-text{
+  display: block;
+  padding: 30px 0;
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-item-name {
@@ -361,7 +375,44 @@ body {
   color: var(--color-grey-757575);
 
   /*padding: 0 0 30px 0;*/
-  margin: 0;
+  margin: 0 0 16px 0;
+}
+
+.team-item-soc-list{
+
+}
+
+.team-item-soc-item{
+
+}
+
+.team-item-soc-link {}
+
+/* ---clients--- */
+
+.clients{
+  padding: 94px 215px;
+}
+
+.container-clients{
+
+}
+
+.clients-list{
+  display: flex;
+  justify-content: space-between;
+}
+
+.clients-list-item{
+  display: inline-block;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+}
+
+.clients-list-item + .clients-list-item{
+  margin-left: 50px;  
 }
 
 /* ---footer section---*/
@@ -370,6 +421,7 @@ body {
   background-color: #2F303A;
   padding-top: 60px;
   padding-bottom: 60px;
+  display: flex;
 }
 
 /*.container-footer{
@@ -426,6 +478,46 @@ body {
 .footer-contacts-item-text:hover,
 .footer-contacts-item-text:focus {
   color: var(--focus-color-blue);
+}
+
+.footer-social-title{
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin: 0 0 20px 0;
+}
+
+.footer-soc-list{
+  display: flex;
+}
+
+.footer-soc-item{
+
+}
+
+.footer-soc-item + .footer-soc-item{
+  margin-left: 10px;
+}
+
+.footer-soc-link{
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-soc-link:hover{
+  background-color: var(--focus-color-blue);
+}
+
+.footer-soc-icon{
+  fill: #ffffff;
 }
 
 /* ---portfolio section---*/
