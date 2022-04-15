@@ -152,6 +152,11 @@ body {
   color: var(--focus-color-blue);
 }
 
+.header-contacts-item-img{
+  fill: rgba(117, 117, 117, 1);
+}
+
+
 /* ---first section---*/
 .first-section {
   width: 1600px;
@@ -238,6 +243,13 @@ body {
   background: #F5F4FA;
   border-radius: 4px;
   margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.peculiarities-item-img{
+  fill: var(--color-dark-212121);
 }
 
 .peculiarities-item-title {
@@ -379,19 +391,41 @@ body {
 }
 
 .team-item-soc-list{
-
+  display: flex;
+  justify-content: center;
 }
 
-.team-item-soc-item{
+/* .team-item-soc-item{
 
+} */
+
+.team-item-soc-item + .team-item-soc-item{
+  margin-left: 10px;
 }
 
-.team-item-soc-link {}
+.team-item-soc-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #AFB1B8;
+}
+
+.team-item-soc-icon{
+  fill: currentColor;
+}
+
+.team-item-soc-link:hover{
+  background-color: var(--focus-color-blue);
+  color: var(--color-white-ffffff);
+}
 
 /* ---clients--- */
 
 .clients{
-  padding: 94px 215px;
+  padding: 94px 0;
 }
 
 .container-clients{
@@ -409,10 +443,27 @@ body {
   height: 92px;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
+  color: #AFB1B8;
 }
 
 .clients-list-item + .clients-list-item{
   margin-left: 50px;  
+}
+
+.clients-list-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: currentColor
+}
+
+.clients-list-img{
+  fill: currentColor;
+}
+
+.clients-list-item:hover{
+  color: var(--focus-color-blue);
+  border: 1px solid var(--focus-color-blue);
 }
 
 /* ---footer section---*/
@@ -421,23 +472,24 @@ body {
   background-color: #2F303A;
   padding-top: 60px;
   padding-bottom: 60px;
-  display: flex;
 }
 
-/*.container-footer{
+.container-footer{
+  display: flex;
+  justify-self: flex-start;
+}
 
-}*/
+.footer-main{
+  margin-right: 70px;
+}
 
 .footer-logo {
-  /* display: block; */
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--focus-color-blue);
-
-  /* margin-bottom: 20px; */
 }
 
 .logo-second-footer {
@@ -494,9 +546,9 @@ body {
   display: flex;
 }
 
-.footer-soc-item{
+/* .footer-soc-item{
 
-}
+} */
 
 .footer-soc-item + .footer-soc-item{
   margin-left: 10px;
