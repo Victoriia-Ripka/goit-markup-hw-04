@@ -473,7 +473,9 @@ body {
 }
 
 .clients-list-item:hover,
-.clients-list-item:focus{
+.clients-list-item:focus,
+.clients-list-div:hover,
+.clients-list-div:focus{
   color: var(--focus-color-blue);
   border: 1px solid var(--focus-color-blue);
 }
@@ -488,7 +490,8 @@ body {
 
 .container-footer{
   display: flex;
-  justify-self: flex-start;
+  align-items: baseline;
+  /* justify-self: flex-start; */
 }
 
 .footer-main{
@@ -655,7 +658,9 @@ body {
 }
 
 .portf-list-item:focus,
-.portf-list-item:hover{
+.portf-list-item:hover,
+.portf-list-link:hover,
+.portf-list-link:focus{
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
   0px 4px 4px rgba(0, 0, 0, 0.06),
   1px 4px 6px rgba(0, 0, 0, 0.16);
